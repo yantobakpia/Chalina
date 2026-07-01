@@ -1,10 +1,6 @@
-import { LitElement, html } from 'https://cdn.jsdelivr.net/gh/lit/dist@3/core/lit-core.min.js';
-
-class AppFooter extends LitElement {
-  createRenderRoot() { return this; }
-  
-  render() {
-    return html`
+class AppFooter extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
       <footer class="w-full bg-[#050505] pt-20 pb-10 px-8 flex flex-col items-center border-t border-white/10">
           <div class="max-w-7xl w-full flex flex-col md:flex-row justify-between gap-12 mb-16">
               <div class="max-w-sm">

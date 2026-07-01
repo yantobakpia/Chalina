@@ -1,9 +1,6 @@
-import { LitElement, html } from 'https://cdn.jsdelivr.net/gh/lit/dist@3/core/lit-core.min.js';
-
-class AppNavigation extends LitElement {
-  createRenderRoot() { return this; }
-  render() {
-    return html`
+class AppNavigation extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
       <nav class="w-full fixed z-10 flex items-center justify-center border-b border-white bg-black h-[87px]">
         <div class="w-full max-w-[1440px] flex items-center justify-between px-12">
           <div class="flex items-center gap-1.5">
