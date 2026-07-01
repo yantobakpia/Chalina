@@ -137,8 +137,13 @@
     </nav>
 
     <!-- Hero Section -->
-    <main class="w-full flex items-center justify-center p-8 min-h-screen pt-24 pb-24">
-        <div class="max-w-7xl w-full flex flex-col lg:flex-row gap-16 items-center justify-between">
+    <main class="w-full flex items-center justify-center p-8 min-h-screen pt-24 pb-24 relative overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-zinc-900/50 mix-blend-multiply z-10"></div>
+            <img src="https://placehold.co/2000" alt="Hero Background" class="w-full h-full object-cover opacity-50" />
+        </div>
+
+        <div class="max-w-7xl w-full flex flex-col lg:flex-row gap-16 items-center justify-between relative z-10">
             <div class="flex-1 space-y-8">
                 <div class="inline-block border-l border-red-500 text-gray-400 font-mono text-sm px-3 py-1">
                     Perusahaan Tepercaya Pemeliharaan Infrastruktur
