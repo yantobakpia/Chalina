@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" href="/favicon.ico" />
+  <title>PT Cahaya Lintang Abadi</title>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script type="importmap">
+    {
+      "imports": {
+        "lit": "https://cdn.jsdelivr.net/gh/lit/dist@3/core/lit-core.min.js"
+      }
+    }
+  </script>
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Syne:wght@800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    :root {
+      --font-sans: "Inter", sans-serif;
+      --font-syne: "Syne", sans-serif;
+      --font-mono: "Consolas", monospace;
+    }
+    body { background-color: #0b0b0b; color: #f8f8f8; font-family: var(--font-sans); }
+    .font-syne { font-family: var(--font-syne); }
+    .font-mono { font-family: var(--font-mono); }
+    .font-sans { font-family: var(--font-sans); }
+
+    /* Placeholders */
+    .bg-placeholder-1 { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1541888086425-d81bb19240f5?q=80&w=1000&auto=format&fit=crop') center/cover; }
+    .bg-placeholder-2 { background-color: #333; }
+    .bg-placeholder-3 { background-color: #444; }
+    .bg-placeholder-4 { background-color: #555; }
+    .bg-placeholder-5 { background-color: #666; }
+    .bg-placeholder-6 { background-color: #777; }
+    .bg-placeholder-7 { background-color: #888; }
+    .bg-placeholder-8 { background-color: #999; }
+    .bg-placeholder-9 { background-color: #222; }
+    .bg-placeholder-10 { background-color: #aaa; }
+    
+    .gallery-overlay {
+        background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+    }
+  </style>
+</head>
+<body class="flex flex-col min-h-screen">
+  <my-app></my-app>
+  <script type="module" src="./js/pages/my-app.js"></script>
+</body>
+</html>
